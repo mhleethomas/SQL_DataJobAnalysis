@@ -10,6 +10,7 @@ The data for this project is sourced from various CSV files containing informati
 - **PostgreSQL**: For running SQL queries and managing the database.
 - **Visual Studio Code**: As the code editor for writing and managing SQL scripts.
 - **CSV files**: Containing data about job postings, companies, and skills.
+- **GitHub Copilot**: For AI-assisted code suggestions and improvements.
 
 ## The Analysis
 The analysis is divided into several SQL scripts, each focusing on a specific aspect of the data:

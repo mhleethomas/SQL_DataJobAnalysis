@@ -16,6 +16,10 @@ SELECT *
 FROM job_postings_fact
 LIMIT 10;
 
+SELECT DISTINCT
+    job_country
+FROM job_postings_fact
+ORDER BY job_country;
 
 SELECT 
     job_via,
@@ -35,3 +39,12 @@ WHERE job_count > 5 AND (ROUND(job_count * 100.0 / (SELECT SUM(job_count) FROM (
     GROUP BY job_via
 ) AS total_counts), 0)) >= 1
 ORDER BY job_count DESC;
+
+/*
+job_schedule LIKE '%Internship%'
+job_schedule LIKE '%Full-time%'
+job_schedule is NOT NULL
+
+job_country IN('United States', 'Taiwan') 
+
+*/
